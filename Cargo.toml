@@ -1,0 +1,14 @@
+[package]
+name = "gbm"
+version = "0.1.0"
+authors = ["Tristram Healy <trissylegs@gmail.com>"]
+
+[dependencies]
+bitflags = "^0.7"
+libc = "^0.2"
+egl = { version = "^0.2", optional = true }
+wayland-server = { version = "^0.7", optional = true }
+
+[features]
+egl_platform = [ "egl" ]
+wl_server = [ "wayland-server" ]
